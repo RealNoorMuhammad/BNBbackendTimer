@@ -4,9 +4,9 @@ import cors from "cors";
 const app = express();
 app.use(cors());
 
-// 🎯 Countdown target: 5:00 PM EST on Oct 15, 2025
-// EST = UTC-5 → 21:00 UTC
-const targetDate = new Date("2025-10-15T21:00:00Z");
+// 🎯 Countdown target: 5:00 PM EST on Nov 1, 2025
+// EST = UTC-5 → 22:00 UTC
+const targetDate = new Date("2025-11-01T22:00:00Z");
 
 // API route for remaining time
 app.get("/api/time-left", (req, res) => {
